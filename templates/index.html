@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예고을한과 - 전통수제한과</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="예고을한과 로고" class="logo-image">
+            </div>
+            <p class="tagline">정성으로 만드는 전통수제한과</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="nav-container">
+            <ul>
+                <li><a href="#home">홈</a></li>
+                <li><a href="#about">예고을 소개</a></li>
+                <li><a href="#products">전통한과</a></li>
+                <li><a href="#process">제작과정</a></li>
+                <li><a href="#video">소개영상</a></li>
+                <li><a href="#contact">연락처</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <section id="home" class="banner">
+            <div class="banner-img" style="background-color: #e9e9e9; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 40px 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <div style="text-align: center; width: 100%;">
+                    <img src="/api/placeholder/400/150" alt="예고을 한과" style="max-width: 400px; height: auto; margin-bottom: 40px;">
+                    <div style="color: #333; font-size: 1.2rem; line-height: 1.6;">
+                        뒤기지 않고 정성들여 구웠냉 전통 수제 한과<br>
+                        010 6213 0496, 010 8780 4208
+                    </div>
+                </div>
+            </div>
+            <div class="banner-content">
+                <h2>전통방식 그대로, 정성으로 빚는 수제한과</h2>
+                <p>자연의 맛과 정성이 담긴 예고을의 전통 한과를 소개합니다. 대대로 내려오는 비법으로 한 땀 한 땀 정성을 담아 만들었습니다.</p>
+            </div>
+        </section>
+        
+        <section id="about" class="intro-section">
+            <h2>예고을 소개</h2>
+            <div class="intro-content">
+                <div class="intro-text">
+                    <p>'예고을'은 전남 구례 시장내 '호남엿집'으로 시작하여<br>
+                    할머니로부터 며느리 그리고 우리것의 고귀함을<br>
+                    3대째딸이이어받아 2008년시작하였습니다.</p>
+                    <br>
+                    <p>제조 방식은 옛부터 내려오는<br>
+                    재래방식 그대로 빚어 수작업으로이루어져<br>
+                    할머니의 그 옛날 손맛을 그대로 느낄 수 있습니다.</p>
+                    <br>
+                    <p>사용하는 모든 재료들은<br>
+                    높고 푸름을 머금은 지리산과<br>
+                    섬진강의 맑은 물이 흐르는 비옥한 땅,<br>
+                    우리 고장에서 나는 순수 100% 우리농산물만을사용하며<br>
+                    식품의 가치를 더하고 있습니다.</p>
+                </div>
+                <div class="intro-image" style="background-image: url('/api/placeholder/600/300');"></div>
+            </div>
+        </section>
+        
+        <section id="products" class="products-section">
+            <h2>전통한과</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('/api/placeholder/300/200');"></div>
+                    <div class="product-info">
+                        <h3>쌀엿, 콩엿</h3>
+                        <p>전통 방식으로 만든 건강한 쌀엿과 콩엿입니다. 깊은 단맛과 풍부한 영양이 특징입니다.</p>
+                        <div class="product-price">1kg ₩27,000</div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('/api/placeholder/300/200');"></div>
+                    <div class="product-info">
+                        <h3>콩엿과</h3>
+                        <p>콩엿으로 만든 전통 한과입니다. 깊은 맛과 건강함을 동시에 느낄 수 있습니다.</p>
+                        <div class="product-price">
+                            1박스 (20장) ₩37,000<br>
+                            1박스 (40장) ₩62,000<br>
+                            <small>* 콩유과는 판매단위가 갯수(수량)단위 입니다. (무게 단위 아닙니다)</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('/api/placeholder/300/200');"></div>
+                    <div class="product-info">
+                        <h3>조청</h3>
+                        <p>전통 방식으로 정성껏 달인 조청입니다. 자연 그대로의 단맛을 느낄 수 있습니다.</p>
+                        <div class="product-price">
+                            1.2kg ₩20,000<br>
+                            2.4kg ₩30,000
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('/api/placeholder/300/200');"></div>
+                    <div class="product-info">
+                        <h3>약과</h3>
+                        <p>꿀과 참기름의 풍미가 어우러진 전통 약과입니다. 바삭하면서도 쫄깃한 식감이 일품입니다.</p>
+                        <div class="product-price">문의 바랍니다</div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('/api/placeholder/300/200');"></div>
+                    <div class="product-info">
+                        <h3>강정</h3>
+                        <p>국내산 찹쌀과 견과류를 사용하여 만든 전통 강정입니다. 바삭한 식감과 고소한 맛이 일품입니다.</p>
+                        <div class="product-price">문의 바랍니다</div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('/api/placeholder/300/200');"></div>
+                    <div class="product-info">
+                        <h3>선물세트</h3>
+                        <p>다양한 한과를 한 번에 맛볼 수 있는 선물세트입니다. 소중한 분들께 선물하기 좋습니다.</p>
+                        <div class="product-price">구성에 따라 가격 상이</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="video" class="video-section">
+            <h2>예고을 TV 소개영상</h2>
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <p>예고을 전통한과 소개 영상</p>
+                </div>
+            </div>
+            <div class="video-text">
+                <p>예고을이 SBS 생활의 달인에 소개되었습니다. 전통 방식으로 한과를 만드는 과정과 맛의 비결을 확인해보세요.</p>
+            </div>
+        </section>
+        
+        <section id="process" class="process-section">
+            <h2>전통한과 제작과정</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>재료 준비</h3>
+                    <p>국내산 친환경 재료만을 엄선하여 준비합니다. 찹쌀, 꿀, 참기름 등 최상급 재료를 사용합니다.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>반죽 및 성형</h3>
+                    <p>전통 방식으로 반죽하고 정성스럽게 손으로 모양을 빚어냅니다.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>열처리 과정</h3>
+                    <p>전통 가마에서 적절한 온도와 시간을 지켜 구워내거나 튀겨냅니다.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>당침 및 건조</h3>
+                    <p>천연 꿀과 조청으로 당을 입히고 적절히 건조시켜 맛과 식감을 완성합니다.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact-section">
+            <h2>연락처</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>전화 및 이메일</h3>
+                    <p><i class="fas fa-phone"></i> 031-123-4567</p>
+                    <p><i class="fas fa-mobile-alt"></i> 010-9876-5432</p>
+                    <p><i class="fas fa-envelope"></i> info@yegoeul.com</p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3>운영 시간</h3>
+                    <p><i class="far fa-clock"></i> 평일: 오전 9시 - 오후 6시</p>
+                    <p><i class="far fa-clock"></i> 토요일: 오전 10시 - 오후 4시</p>
+                    <p><i class="fas fa-ban"></i> 일요일 및 공휴일: 휴무</p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3>구매 안내</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 경기도 양평군 서종면 예고을길 123</p>
+                    <p><i class="fas fa-shopping-cart"></i> 온라인 쇼핑몰: www.yegoeul.com/shop</p>
+                    <p><i class="fas fa-truck"></i> 배송문의: 031-123-4567</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="예고을한과 로고" class="footer-logo-image">
+                </div>
+                <p class="footer-tagline">"전통과 멋을 즐겁게 함께 있는 곳, 예고을식품"</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">홈</a>
+                <a href="#about">소개</a>
+                <a href="#products">전통한과</a>
+                <a href="#process">제작과정</a>
+                <a href="#contact">연락처</a>
+            </div>
+            <div class="footer-contact">
+                <p><i class="fas fa-phone"></i> 010-6213-0496, 010-8780-4208</p>
+            </div>
+            <p class="footer-copyright">© 2024 예고을 전통한과. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
